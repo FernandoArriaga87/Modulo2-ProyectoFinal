@@ -25,3 +25,25 @@ body{
 .nav-links li{
     margin-left: 20px;
 }
+
+/*Estilos de la seccion hero*/
+
+.hero{
+    background-image: url("https://media.admagazine.com/photos/618a635c5e45a526c6be8c7a/master/pass/76739.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    padding: 100px 0;
+}
+
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero h2{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
