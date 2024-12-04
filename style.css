@@ -5,6 +5,7 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
 .navbar{
@@ -26,10 +27,21 @@ body{
     margin-left: 20px;
 }
 
+.nav-links a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+.nav-links a:hover{
+    color: white;
+}
+
 /*Estilos de la seccion hero*/
 
 .hero{
-    background-image: url("https://media.admagazine.com/photos/618a635c5e45a526c6be8c7a/master/pass/76739.jpg");
+    background-image: radial-gradient(circle, transparent, black),
+    url("https://media.admagazine.com/photos/618a635c5e45a526c6be8c7a/master/pass/76739.jpg");
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -51,19 +63,29 @@ body{
 /*Seccion de productos*/
 
 .featured-products{
-    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 50px 0;
     text-align: center;
+}
+
+.featured-products h2{
+    margin-bottom: 20px;
 }
 
 .product-list{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    max-width: 1100px;
+    gap: 20px;
 }
 
 .product{
     width: 300px;
-    margin-bottom: 30px;
 }
 
 .product img{
